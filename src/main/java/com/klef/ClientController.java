@@ -4,17 +4,27 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+
 public class ClientController 
 {
 	@GetMapping("/")
-	public String home()
-	{
-		return "CI/CD and Cloud DeVOps";
-	}
-	@GetMapping("/demo")
-	public String demo()
-	{
-		return "Jenkins Demo";
-	}
+   public String home()
+   {
+	return "CI/CD and Cloud Devops";
 	
+   }
+	
+	
+	 @GetMapping("/demo")
+	   public String demo()
+	   {
+		   return "Deploy springboot using Jenkins";
+	   }
+	   
+   @GetMapping("/test")
+   public String test()
+   {
+	   return "Deploy springboot using Jenkins";
+   }
+   
 }
